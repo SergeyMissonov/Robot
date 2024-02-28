@@ -1,0 +1,1 @@
+"prefix=/usr Name: gazebo Description: Description of gazebo Version: 1.0.0 "
