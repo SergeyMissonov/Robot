@@ -37,6 +37,6 @@ sudo apt install ros-noetic-desktop-full
 - Настраиваем переменные окружения ROS и автоматически добавляем их в bash-сеанс при каждом новом запуске Ubuntu:
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-16. Запускаем созданный скрипт из папки scripts на host для установки необходимых пакетов для работы датчиков fr1.sh
+16. Запускаем созданный скрипт из папки scripts для установки необходимых пакетов для работы датчиков fr1.sh
 17. Запускаем созданный скрипт из папки scripts для настройки удаленного доступа по SSH fr2.sh
 18. Управляем роботом. Запускаем в одном терминале rosrun rosbots_driver part2_cmr.py, запускаем во втором терминале управление с клавиатуры и проверяем rosrun teleop_twist_keyboard teleop_twist_keyboard.py /cmd_vel:=/part2_cmr/cmd_vel
