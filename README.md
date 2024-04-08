@@ -40,3 +40,4 @@ source ~/.bashrc
 16. Запускаем созданный скрипт из папки scripts для установки необходимых пакетов для работы датчиков fr1.sh
 17. Запускаем созданный скрипт из папки scripts для настройки удаленного доступа по SSH fr2.sh
 18. Управляем роботом. Запускаем в одном терминале rosrun rosbots_driver part2_cmr.py, запускаем во втором терминале управление с клавиатуры и проверяем rosrun teleop_twist_keyboard teleop_twist_keyboard.py /cmd_vel:=/part2_cmr/cmd_vel
+19. Создаем Dockerfile в папке script для сборки docker-образа ,помещаем в образ наши скрипты fr1.sh и fr2.sh. Собираем образ командой  docker build -t robor . Запускаем и проверяем созданный образ командой docker run -it robor /bin/bash и  проверяем наличие наших  скриптов fr1.sh и fr2.sh внутри контейнера в папке /app.
